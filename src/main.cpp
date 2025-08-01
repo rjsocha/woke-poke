@@ -51,17 +51,17 @@ int main(int argc, char *argv[]) {
   }
 */
 
+  QString configPath = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + "/woke-poke";
+  QFileInfo fi(configPath);
+  if (!fi.exists()) {
+    return 0;
+  }
+
   QApplication app(argc, argv);
   QIcon icon(":/woke-poke.png");
   if (icon.isNull()) {
     qWarning("Tray icon not found!");
     return 1;
-  }
-
-  QString configPath = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + "/woke-poke";
-  QFileInfo fi(configPath);
-  if (!fi.exists()) {
-    return 0;
   }
 
   QSystemTrayIcon *tray = new QSystemTrayIcon(icon, &app);
