@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
-Name=Woke-Poke
+Name=Woke Poke
 Exec=/usr/bin/woke-poke
 Icon=/usr/share/icons/woke-poke.svg
