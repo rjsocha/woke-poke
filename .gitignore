@@ -1,0 +1,8 @@
+*.o
+*.h
+*.cpp
+Makefile
+woke-poke
+.qmake.stash
+!src/*.h
+!src/*.cpp

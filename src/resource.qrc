@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/">
+    <file>woke-poke.png</file>
+  </qresource>
+</RCC>
